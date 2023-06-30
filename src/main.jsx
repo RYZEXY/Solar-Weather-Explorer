@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,9 +12,10 @@ import IPS from "./IPS.jsx";
 import MPC from "./MPC.jsx";
 import RBE from "./RBE.jsx";
 import SEP from "./SEP.jsx";
-ReactDOM.createRoot(document.getElementById("root")).render(
+
+ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename='/solar-weather-explorer'>
+    <BrowserRouter basename="/solar-weather-explorer">
       <Routes>
         <Route path="/" element={<App name="Solar Weather Explorer" testMode={false} />} />
         <Route path="/event/:type/:time/:id" element={<SolarEventDetails />} />
@@ -29,5 +30,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="*" element={<><h1>Uh oh, 404. Go back.</h1></>}/>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
