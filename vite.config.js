@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/solar-weather-explorer/",
-
+  base: "/solar-weather/",
   plugins: [react()],
   server: {
     port: 3000
