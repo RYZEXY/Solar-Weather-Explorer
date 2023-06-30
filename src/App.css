@@ -1,42 +1,161 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.header {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #04040440;
+  font-size: 28px;
+  margin-bottom: -40px;
+}
+
+
+.useInfo {
   text-align: center;
+  margin: 20px auto;
+  margin-bottom:30px;
+  max-width: 800px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.useInfo p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.white-link {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0476d9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin: 10px 0px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.eventDate {
+  display: flex;
+  flex-direction: column;
+  color: white
 }
 
-.card {
-  padding: 2em;
+.eventDateLine {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.href{
+  color: white
+}
+.dateForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #33434faa;
+  border-radius: 5px;
+}
+.dateForm > div {
+  display: flex;
+  gap: 5px;
+}
+.dateForm > button {
+  color: white;
+  background-color: #33434f;
 }
 
-.read-the-docs {
-  color: #888;
+.eventIcon {
+  margin: 5px;
+  text-decoration: none;
+  background-color: #33434f60;
+  border-radius: 10px;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.eventIcon p {
+  color: white;
+  
+}
+
+.legendGrid img, .eventIcon img {
+  border-radius: 10px;
+}
+.temp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.eventIcon span {
+  text-decoration: none;
+  color: white;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.description {
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.description h2 {
+  font-size: 36px;
+}
+
+.description p {
+  margin-top: 50px;
+  font-size: 22px;
+}
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #33434faa;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 5px;
+}
+.legendGrid {
+  display: grid;
+  width: 100%;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
+}
+
+.legendGrid div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid #33434fff;
+}
+
+.weatherList {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 20px 30px 100px 30px;
 }
