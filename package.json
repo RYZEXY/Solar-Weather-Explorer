@@ -10,7 +10,7 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest",
-    "deploy": "vite build && gh-pages -b new-branch -d dist"
+    "deploy": "vite build && gh-pages -d dist -b new-branch"
   },
   "author": "",
   "license": "ISC",
